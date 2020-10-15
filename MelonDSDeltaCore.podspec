@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.description  = "iOS framework that wraps melonDS to allow playing Nintendo DS games with Delta emulator."
   spec.homepage     = "https://github.com/rileytestut/MelonDSDeltaCore"
   spec.platform     = :ios, "12.0"
-  spec.source       = { :git => "https://github.com/rileytestut/MelonDSDeltaCore.git" }
+  spec.source       = { :git => "https://github.com/OnlyBMan/MelonDSDeltaCore.git" }
 
   spec.author             = { "Riley Testut" => "riley@rileytestut.com" }
   spec.social_media_url   = "https://twitter.com/rileytestut"
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "MelonDSDeltaCore/Types/MelonDSTypes.h", "MelonDSDeltaCore/Bridge/MelonDSEmulatorBridge.h", "MelonDSDeltaCore/MelonDSDeltaCore.h"
   spec.header_mappings_dir = ""
   spec.resource_bundles = {
-    "melonDS" => ["MelonDSDeltaCore/**/*.deltamapping", "MelonDSDeltaCore/**/*.deltaskin", "melonDS/romlist.bin"]
+    "melonDS" => ["MelonDSDeltaCore/**/*.deltamapping", "MelonDSDeltaCore/**/*.deltaskin"]
   }
   
   spec.dependency 'DeltaCore'
